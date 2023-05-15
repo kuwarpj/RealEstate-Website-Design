@@ -1,0 +1,291 @@
+body {
+  background-color: #f6f9f9 !important;
+}
+
+.property-detail {
+  margin-top: 20px !important;
+}
+
+.property-crousel {
+  border: none;
+  width: 70%;
+
+  background-color: #ffffff;
+  
+  border-radius: 6px;
+  height: 43vw;
+  margin: auto;
+}
+
+.property-inner-crousel {
+
+  width: 100% !important;
+  height: 36vw;
+}
+
+.carousel-indicators {
+  height: 6vw;
+  
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-indicators img {
+  width: 93px !important;
+  margin: 3px !important;
+  height: 100% !important;
+}
+.property-overview {
+  font-family: "Roboto";
+  border: none;
+  width: 70%;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  margin: auto;
+}
+
+.block-wrap {
+  border-radius: 12px;
+}
+
+.overview-title {
+  margin: 35px 35px 20px 35px !important;
+}
+
+.overview-title h2 {
+  font-size: 18px;
+  line-height: 21.6px;
+  vertical-align: baseline;
+
+  font-weight: 400;
+}
+
+.property-overview-data {
+  margin: 25px 25px 15px 30px !important;
+}
+
+.property-description-content {
+  margin: 25px 25px 15px 30px !important;
+  font-size: 15px;
+}
+
+.list-2-cols {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list-2 {
+  width: 50%;
+}
+
+.list-2 li {
+  padding: 10px;
+  margin-left: 10px;
+  display: flex;
+  font-size: 15px;
+
+  justify-content: space-between;
+}
+
+.list-3-cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.list-3 {
+  width: 32%;
+}
+
+.list-3 li {
+  padding: 10px;
+
+  display: flex;
+  font-size: 15px;
+}
+
+.list-3 a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+.btn-slim {
+  font-size: 12px !important;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.property-details-list {
+  background-color: #e5f6fe;
+  border: 1px solid #36bcfb;
+  border-radius: 6px;
+}
+
+/* Mortage Calculator CSS */
+
+.mortgage-data li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-blue {
+  color: blue;
+}
+
+.color-yellow {
+  color: yellow;
+}
+
+.color-green {
+  color: green;
+}
+
+.input-group input:focus {
+  outline: none !important;
+}
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 1030px){
+  .property-crousel {
+    width: 86%;
+  }
+
+  .property-overview {
+    width: 86%
+  }
+}
+
+@media only screen and (max-width: 980px){
+  .property-crousel {
+    
+    width: 87%;
+ 
+  }
+}
+
+
+@media only screen and (max-width: 890px) {
+ 
+
+  .property-crousel {
+  
+    width: 92%;
+  
+  }
+
+  .property-overview {
+    width: 92%;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .property-crousel {
+    border: none;
+    width: 92%;
+    height: 57vw;
+    background-color: #ffffff;
+
+    border-radius: 6px;
+
+    margin: auto;
+  }
+  .property-inner-crousel {
+    width: 100% !important;
+    height: 50vw;
+  }
+
+  .property-overview {
+    width: 92%
+  }
+
+  .property-overview-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .property-overview-data ul {
+    flex-basis: calc(50% - 15px);
+    margin-right: 30px;
+  }
+
+  .property-overview-data ul:last-child {
+    margin-right: 0;
+    border-right: none;
+  }
+
+  .list-2-cols {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .list-2 {
+    width: 100%;
+  }
+
+  .list-3 {
+    width: 100%;
+  }
+
+  .mortgage-calculator-main {
+    display: flex;
+    border: 1px solid green;
+
+    flex-direction: column;
+  }
+
+  .mortgage-chart {
+    border: 2px solid red;
+    width: 100%;
+  }
+
+  .mortgage-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mortgage-data li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .floor-wrap {
+    border-bottom: none !important;
+  }
+
+  .floor-plans {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .floor-plans ul {
+    width: 100%;
+  }
+
+  .floor-plans li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #bec0c1;
+    margin: 15px 10px 10px 10px;
+  }
+}

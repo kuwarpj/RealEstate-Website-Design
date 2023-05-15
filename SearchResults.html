@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Result</title>
+    <link rel="stylesheet" href="./CSS/SearchResult.css" 
+    
+    <!-- Bootstrap 5 CSS CDN -- />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Fontawesome Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css"
+        integrity="sha512-WidMaWaNmZqjk3gDE6KBFCoDpBz9stTsTZZTeocfq/eDNkLfpakEd7qR0bPejvy/x0iT0dvzIq4IirnBtVer5A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="p-2 grid-search-main-container">
+        <div class="grid-s-function mx-5">
+            <div class="searchresult-fun-text">
+                Showing <span> 1 - 30 </span> of 15 Result
+            </div>
+            <div class="searchresult-sort">
+                <div class="search-sort-icon mx-3">
+                    <i class="bi bi-grid fa-lg"></i>
+                    <i class="bi bi-list fa-lg"></i>
+                </div>
+                <div class="sort-platform ">
+                    Sort by:
+                    <select id="platform" class="select-filter">
+                        <option class="" value="">Default</option>
+                        <option value="">Newest</option>
+                        <option value="">Oldest</option>
+
+                        <option value="">Lowest Price</option>
+
+                        <option value="">Random</option>
+                        
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group  mx-5">
+            <div class="card grid-s-card me-4">
+                <div id="carouselExampleInterval1" class="carousel slide search-slide-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner h-100 search-carousel-image">
+                        <div class="grid-searchresult-feature">
+                            <span class="mx-1"><i class="bi bi-lightning-charge me-1"></i>Featured</span>
+                        </div>
+
+                        <div class="grid-searchresult-price">
+                            <span class="mx-2">$ 4,600</span>
+                        </div>
+                        <div class="carousel-item active h-100 search-img-div" data-bs-interval="10000">
+                            <img src="./images/home1.jpg"
+                                class="h-100 w-100 search-res-img" alt="..." />
+                        </div>
+                        <div class="carousel-item search-img-div" data-bs-interval="2000">
+                            <img src="./images/home1.jpg"
+                                class="h-100 w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item search-img-div">
+                            <img src="./images/home1.jpg"
+                                class="h-100 w-100" alt="..." />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="card-body p-0 m-0">
+                    <div class="grid-s-content">
+                        <div class="d-md-flex flex-column mx-2">
+                            <div class="grid-s-name mt-2">Mayflower Hibiscus Inn</div>
+                            <div class="search-result-address mb-3">
+                                <span class="city">374 Jonshon Aves</span>
+                            </div>
+                        </div>
+
+                        <div class="item-amenities item-amenities-with-icons mb-2 mx-2">
+                            <div class="h-figure">
+                                <i class="fa-solid fa-bed fa-lg"></i><span class="hz-text">6 Beds </span>
+                            </div>
+                            <div class="h-figure">
+                                <i class="fa-solid fa-shower fa-lg"></i>
+                                <span class="hz-text">2 Baths</span>
+                            </div>
+                            <div class="h-figure">
+                                <i class="fa-solid fa-ruler fa-lg"></i><span class="hz-text">200 sqft</span>
+                            </div>
+                        </div>
+
+                        <p class="card-text grid-s-text mx-2 mb-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus porta justo eget risus consectetur, non venenatis elit
+                            blandit. Mauris vehicula, libero
+                        </p>
+
+                        <div class="grid-last-div d-flex flex-row tags mt-4 mb-2 pt-2 border-top mx-2">
+                            <div class="grid-slast-text">For Sale</div>
+                            <div class="search-last-icon d-flex">
+                                <div><i class="bi bi-box-arrow-up-right fa-sm me-2"></i></div>
+                                <div><i class="bi bi-suit-heart fa-sm me-2"></i></div>
+                                <div><i class="bi bi-plus-square fa-sm"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card grid-s-card me-4 ">
+                <div id="carouselExampleInterval2" class="carousel slide search-slide-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner h-100 search-carousel-image">
+                        <div class="grid-searchresult-feature">
+                            <span class="mx-1"><i class="bi bi-lightning-charge me-1"></i>Featured</span>
+                        </div>
+
+                        <div class="grid-searchresult-price">
+                            <span class="mx-2">$ 4,600</span>
+                        </div>
+                        <div class="carousel-item active h-100 search-img-div" data-bs-interval="10000">
+                           <img src="./images/home1.jpg"
+                                class="h-100 w-100 search-res-img" alt="..." />
+                        </div>
+                        <div class="carousel-item search-img-div" data-bs-interval="2000">
+                           <img src="./images/home1.jpg"
+                                class="h-100 w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item search-img-div">
+                            <img src="./images/home1.jpg"
+                                class="h-100 w-100" alt="..." />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="card-body p-0 m-0">
+                    <div class="grid-s-content">
+                        <div class="d-md-flex flex-column mx-2">
+                            <div class="grid-s-name mt-2">Mayflower Hibiscus Inn</div>
+                            <div class="search-result-address mb-3">
+                                <span class="city">374 Jonshon Aves</span>
+                            </div>
+                        </div>
+
+                        <div class="item-amenities item-amenities-with-icons mb-2 mx-2">
+                            <div class="h-figure">
+                                <i class="fa-solid fa-bed fa-lg"></i><span class="hz-text">6 Beds </span>
+                            </div>
+                            <div class="h-figure">
+                                <i class="fa-solid fa-shower fa-lg"></i>
+                                <span class="hz-text">2 Baths</span>
+                            </div>
+                            <div class="h-figure">
+                                <i class="fa-solid fa-ruler fa-lg"></i><span class="hz-text">200 sqft</span>
+                            </div>
+                        </div>
+
+                        <p class="card-text grid-s-text mx-2 mb-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus porta justo eget risus consectetur, non venenatis elit
+                            blandit. Mauris vehicula, libero
+                        </p>
+
+                        <div class="grid-last-div d-flex flex-row tags mt-4 mb-2 pt-2 border-top mx-2">
+                            <div class="grid-slast-text">For Sale</div>
+                            <div class="search-last-icon d-flex">
+                                <div><i class="bi bi-box-arrow-up-right fa-sm me-2"></i></div>
+                                <div><i class="bi bi-suit-heart fa-sm me-2"></i></div>
+                                <div><i class="bi bi-plus-square fa-sm"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card grid-s-card me-4">
+                <div id="carouselExampleInterval3" class="carousel slide search-slide-carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner h-100 search-carousel-image">
+                        <div class="grid-searchresult-feature">
+                            <span class="mx-1"><i class="bi bi-lightning-charge me-1"></i>Featured</span>
+                        </div>
+
+                        <div class="grid-searchresult-price">
+                            <span class="mx-2">$ 4,600</span>
+                        </div>
+                        <div class="carousel-item active h-100 search-img-div" data-bs-interval="10000">
+                           <img src="./images/home1.jpg"
+                                class="h-100 w-100 search-res-img" alt="..." />
+                        </div>
+                        <div class="carousel-item search-img-div" data-bs-interval="2000">
+                      <img src="./images/home1.jpg"
+                                class="h-100 w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item search-img-div">
+                            <img src="./images/home1.jpg"
+                                class="h-100 w-100" alt="..." />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="card-body p-0 m-0">
+                    <div class="grid-s-content">
+                        <div class="d-md-flex flex-column mx-2">
+                            <div class="grid-s-name mt-2">Mayflower Hibiscus Inn</div>
+                            <div class="search-result-address mb-3">
+                                <span class="city">374 Jonshon Aves</span>
+                            </div>
+                        </div>
+
+                        <div class="item-amenities item-amenities-with-icons mb-2 mx-2">
+                            <div class="h-figure">
+                                <i class="fa-solid fa-bed fa-lg"></i><span class="hz-text">6 Beds </span>
+                            </div>
+                            <div class="h-figure">
+                                <i class="fa-solid fa-shower fa-lg"></i>
+                                <span class="hz-text">2 Baths</span>
+                            </div>
+                            <div class="h-figure">
+                                <i class="fa-solid fa-ruler fa-lg"></i><span class="hz-text">200 sqft</span>
+                            </div>
+                        </div>
+
+                        <p class="card-text grid-s-text mx-2 mb-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus porta justo eget risus consectetur, non venenatis elit
+                            blandit. Mauris vehicula, libero
+                        </p>
+
+                        <div class="grid-last-div d-flex flex-row tags mt-4 mb-2 pt-2 border-top mx-2">
+                            <div class="grid-slast-text">For Sale</div>
+                            <div class="search-last-icon d-flex">
+                                <div><i class="bi bi-box-arrow-up-right fa-sm me-2"></i></div>
+                                <div><i class="bi bi-suit-heart fa-sm me-2"></i></div>
+                                <div><i class="bi bi-plus-square fa-sm"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

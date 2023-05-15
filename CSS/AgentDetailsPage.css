@@ -1,0 +1,234 @@
+.card a {
+  text-decoration: none;
+}
+
+.AgentDetailsPage {
+  background-color: #f6f9f9;
+}
+
+.AgentDetailCard {
+  border: none !important;
+  background-color: #ffffff !important;
+  margin: 40px 20px 50px 20px !important;
+}
+
+.card-title {
+  font-family: "Roboto";
+  font-size: 24px;
+}
+
+.agentRow {
+  margin: 10px !important;
+}
+
+.rating-main-div {
+  display: flex;
+}
+
+.rating-score-text {
+  margin-right: 10px;
+}
+
+.ratings {
+  margin-right: 10px;
+}
+
+.ratings i {
+  color: #cecece;
+}
+
+.rating-color {
+  color: #fbc634 !important;
+}
+
+.agent-list-position {
+  margin-top: 10px;
+}
+
+
+.list-unstyled li {
+  font-family: "Roboto";
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.tax-number {
+  font-weight: 300;
+  color: #6d6868;
+  margin-right: 8px !important;
+}
+.agent-profile-buttons .btn {
+  min-width: 150px;
+  margin-right: 10px;
+}
+
+.btn {
+  display: inline-block !important;
+  padding: 0 15px !important;
+  font-weight: 500 !important;
+  line-height: 40px !important;
+}
+
+.btn-call {
+  color: #28a745 !important;
+  background-color: transparent !important;
+  border-color: #28a745 !important;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+}
+
+.agent-about-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primarys {
+  background-color: #f6f9f9;
+  width: 80%;
+  margin: 5px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px !important;
+  padding: 10px !important;
+  color: #00affe;
+  border: 1px solid #00affe;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.btn-primarys:hover {
+  background-color: #00affe;
+  color: #ffffff;
+}
+
+
+/* Agent About Section */
+
+.agent-div-1 {
+  width: 100% !important;
+}
+
+
+
+.agent-about {
+  display: flex;
+  flex-direction: row;
+  background-color: #f6f9f9;
+}
+
+.agents-card-about {
+  border: none !important;
+  background-color: #ffffff !important;
+  width: 100%;
+  margin: 40px 20px 50px 0px !important;
+  padding: 20px;
+}
+
+.agents-card-body {
+  text-align: justify;
+}
+
+.agent-about-title {
+  font-family: "Roboto";
+  font-size: 24px;
+  margin-bottom: 16px !important;
+}
+
+.agent-about-text {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #5b5757;
+  margin-bottom: 16px !important;
+}
+
+.agent-sidebar-cards {
+  border: none !important;
+  width: 350px;
+  background-color: #ffffff !important;
+  margin: 40px 20px 50px 20px !important;
+}
+
+.agent-sidebar-card-title {
+  font-family: "Roboto";
+  font-size: 18px;
+}
+
+.agent-sidebar-address {
+  color: #636363;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+
+.agent-list-unstyled {
+  border-bottom: 1.4px solid #dde1e0;
+  margin-bottom: 0.7rem !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.agent-list-info a {
+  text-decoration: none;
+  color: #636363;
+  font-weight: 350;
+}
+
+.agent-social {
+  margin: auto;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+.agent-social p {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+.agent-social-media {
+  margin-bottom: 20px;
+}
+
+.agent-social-media-icon {
+  margin-right: 13px;
+}
+
+
+@media only screen and (max-width: 868px) {
+  .agent-about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .agents-card-about {
+    width: 100%;
+  }
+
+  .agent-sidebar-cards {
+    width: 100%;
+
+    margin-left: 10px !important;
+  }
+
+  .btn {
+    margin: 8px !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+}
+
+@media only screen and (max-width: 377px) {
+  .btn {
+    margin: 8px !important;
+    width: 100% !important;
+  }
+}

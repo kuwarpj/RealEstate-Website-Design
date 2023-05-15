@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./CSS/Contact.css" />
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Fontawesome Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css"
+        integrity="sha512-WidMaWaNmZqjk3gDE6KBFCoDpBz9stTsTZZTeocfq/eDNkLfpakEd7qR0bPejvy/x0iT0dvzIq4IirnBtVer5A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <form class="contact-form mb-3 mt-3 ">
+        <div class="contact-form-wrap  px-5 py-5">
+
+            <h2>Custom Inquiry Form</h2>
+            <p>The Inquiry Form widget allows you to design unique forms to capture your leads. This form automatically
+                connects with the integrated Houzez CRM and your email inbox to keep everything on track.</p>
+
+
+            <div class="mb-3">
+                <label  class="form-label">Inquiry Type</label>
+                <select name="enquiry_type" class=" form-control " required="required" >
+                    <option value="">Select</option>
+                    <option value="Purchase">Purchase</value>
+                    <option value="Rent"> Rent</value>
+                    <option value="Sell"> Sell</value>
+                    <option value="Miss"> Miss</value>
+                    <option value="Evaluation"> Evaluation</value>
+                    <option value="Mortgage"> Mortgage</value>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label  class="form-label">Information</label>
+                <select name="enquiry_type" class="form-control" required="required" >
+                    <option value="">I'm</option>
+                    <option value="Purchase">Purchase</value>
+                    <option value="Rent"> Rent</value>
+                    <option value="Sell"> Sell</value>
+                    <option value="Miss"> Miss</value>
+                    <option value="Evaluation"> Evaluation</value>
+                    <option value="Mortgage"> Mortgage</value>
+                </select>
+
+            </div>
+
+            <div class="d-flex justify-content-between mb-3 flex-container">
+                <div class="input-wrap w-100 me-2 ">
+
+                    <input type="text" class="form-control" placeholder="First Name" aria-describedby="basic-addon1">
+                    
+                </div>
+
+                <div class="input-wrap1 w-100  ">
+
+                    <input type="text" class="form-control" placeholder="Last Name" aria-describedby="basic-addon2">
+                </div>
+            </div>
+
+
+            <div class="flex-container mb-3 d-flex justify-content-between">
+                <div class="input-wrap  w-100 me-2 ">
+
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Address"
+                        aria-describedby="emailHelp">
+                </div>
+                <div class="input-wrap1  w-100 ">
+
+                    <input type="text" class="form-control" placeholder="Mobile" aria-describedby="basic-addon3">
+                </div>
+            </div>
+            <div class="block ">
+                <label class="form-label ">Location</label>
+            </div>
+            <div class="flex-container mb-3  d-flex justify-content-between">
+
+
+                <div class="input-wrap w-100  me-2">
+
+                    <select name="enquiry_type" class="form-control e" required="required" >
+                        <option value="">Select City</option>
+                        <option value="Purchase">Purchase</value>
+                        <option value="Rent"> Rent</value>
+                        <option value="Sell"> Sell</value>
+                        <option value="Miss"> Miss</value>
+                        <option value="Evaluation"> Evaluation</value>
+                        <option value="Mortgage"> Mortgage</value>
+                    </select>
+                </div>
+                <div class="area input-wrap w-100 me-2">
+
+                    <select name="enquiry_type" class=" form-control " required="required" >
+                        <option value="">Select Area</option>
+                        <option value="Purchase">Purchase</value>
+                        <option value="Rent"> Rent</value>
+                        <option value="Sell"> Sell</value>
+                        <option value="Miss"> Miss</value>
+                        <option value="Evaluation"> Evaluation</value>
+                        <option value="Mortgage"> Mortgage</value>
+                    </select>
+                </div>
+                <div class="input-wrap1 w-100 ">
+
+                    <select name="enquiry_type" class=" form-control " required="required" >
+                        <option value="">Select State</option>
+                        <option value="Purchase">Purchase</value>
+                        <option value="Rent"> Rent</value>
+                        <option value="Sell"> Sell</value>
+                        <option value="Miss"> Miss</value>
+                        <option value="Evaluation"> Evaluation</value>
+                        <option value="Mortgage"> Mortgage</value>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flex-container mb-3 d-flex justify-content-between">
+                <div class="input-wrap w-100 me-2">
+
+                    <select name="enquiry_type" class=" form-control " required="required" >
+                        <option value="">Select Country</option>
+                        <option value="Purchase">Purchase</value>
+                        <option value="Rent"> Rent</value>
+                        <option value="Sell"> Sell</value>
+                        <option value="Miss"> Miss</value>
+                        <option value="Evaluation"> Evaluation</value>
+                        <option value="Mortgage"> Mortgage</value>
+                    </select>
+                </div>
+
+                <div class="input-wrap1 w-100 ">
+
+                    <input type="text" class="form-control" id="" placeholder="Zip Code"
+                        aria-describedby="basic-addon4">
+                </div>
+
+            </div>
+
+            <label class="form-label">Property Wrap</label>
+            <div class="property-class mb-3">
+                <div class="property-type-wrap">
+
+                    <select name="enquiry_type" class=" form-control " required="required">
+                        <option value="">Select Type</option>
+                        <option value="Purchase">Purchase</value>
+                        <option value="Rent"> Rent</value>
+                        <option value="Sell"> Sell</value>
+                        <option value="Miss"> Miss</value>
+                        <option value="Evaluation"> Evaluation</value>
+                        <option value="Mortgage"> Mortgage</value>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flex-container mb-3 d-flex justify-content-between ">
+                <div class="input-wrap w-100 me-2">
+
+                    <input type="number" id="typeNumber" class="form-control" placeholder="Max-Price" />
+                </div>
+                <div class="input-wrap1 w-100 ">
+
+                    <input type="number" id="typeNumber" class="form-control" placeholder="Minimun Size (sq Ft)" />
+                </div>
+
+            </div>
+
+            <div class="flex-container mb-3 d-flex justify-content-between">
+                <div class="input-wrap w-100 me-2">
+
+                    <input type="number" id="typeNumber" class="form-control" aria-describedby="basic-addon5"
+                        placeholder="No of beds" />
+                </div>
+                <div class="input-wrap1 w-100 ">
+
+                    <input type="number" id="typeNumber" class="form-control" aria-describedby="basic-addon6"
+                        placeholder="No of baths" />
+                </div>
+
+            </div>
+
+
+            <label  class="form-label">Message</label>
+
+            <div class="message-box mb-3  ">
+                <div class="message-wrap  ">
+                    <textarea class="w-100 me-3" rows="4" cols="30"></textarea>
+                </div>
+
+
+            </div>
+            <label class="form-label">GDRP Agreement</label>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input " id="exampleCheck1">
+                <label class="form-check-label fw-light agreement-label " for="exampleCheck1">I consent to having this
+                    website store my submitted information</label>
+            </div>
+
+            <div class="contact-btn-wrap ">
+                <button type="submit" class="btn btn-primary contact-button w-100">Submit</button>
+
+            </div>
+
+
+        </div>
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

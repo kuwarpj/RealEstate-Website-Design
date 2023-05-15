@@ -1,0 +1,185 @@
+/* REALESTATE ID CARD */
+
+
+.main-grid-wrap {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+}
+.realEstate-grid-wrap {
+  margin-top: 10px;
+  border: none !important;
+  border-radius: 5px !important;
+}
+
+/* GRID STATIC TAG AND FUNCTION */
+
+.static-grid-function {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  padding: 4px;
+  margin-bottom: 1em;
+  margin-right: 10px;
+}
+
+.static-grid-function i {
+  cursor: pointer;
+  padding: 6px;
+  color: white;
+  background-color: rgba(57, 55, 55, 0.489);
+  border-radius: 4px;
+}
+
+.static-grid-function i:hover {
+  background-color: rgba(57, 55, 55, 0.845);
+  
+}
+
+.static-grid-price {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  padding: 4px;
+  margin-bottom: 1em;
+  margin-right: 10px;
+}
+
+.static-grid-price span {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 6px;
+}
+
+.static-grid-feature {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-radius: 1px;
+  margin-top: 1em;
+  margin-left: 10px;
+  background-color: #0bb435e5;
+  color: #fff;
+}
+.static-grid-rent {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  border-radius: 1px;
+  margin-top: 1em;
+  margin-right: 10px;
+  background-color: rgba(57, 55, 55, 0.845);
+  color: #fff;
+}
+
+.static-grid-feature span,
+.static-grid-rent span {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.carousel-wrap {
+  border-radius: 5px 5px 0 0 !important;
+}
+
+.realEstate-grid-title {
+  font-size: 16px;
+}
+
+.grid-item-address {
+  font-size: 13px;
+  color: #636363;
+}
+
+.grid-item-amenities {
+  margin-top: 10px;
+  display: flex;
+  padding: 0;
+}
+
+.grid-item-amenities li {
+  font-size: 14px;
+  color: #636363;
+  list-style: none;
+  margin-right: 14px;
+}
+
+.hz-figure {
+  margin-left: 5px;
+}
+
+.single-family-home {
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #222222;
+  margin-bottom: 0;
+}
+
+.item-grid-author {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item-grid-author a,
+.item-grid-author span {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: normal;
+  vertical-align: baseline;
+  font-weight: 300;
+  color: #636363;
+}
+
+.item-gird-author a :hover {
+  text-decoration: none solid rgb(0, 174, 255);
+}
+
+.item-grid-author i {
+  margin-left: 10px;
+  color: #636363;
+}
+
+@media screen and (max-width: 999px) {
+  .main-grid-wrap {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .realEstate-grid-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .grid-content-wrap {
+    text-align: start;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .single-family-home {
+    margin-left: 5px;
+  }
+
+  .grid-item-amenities {
+    margin-left: 5px;
+  }
+}

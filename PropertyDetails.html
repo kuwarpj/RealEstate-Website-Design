@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Details</title>
+    <link rel="stylesheet" href="./CSS/PropertyDetails.css" />
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css"
+      integrity="sha512-WidMaWaNmZqjk3gDE6KBFCoDpBz9stTsTZZTeocfq/eDNkLfpakEd7qR0bPejvy/x0iT0dvzIq4IirnBtVer5A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+
+    <!-- GOOGLE MATERIAL ICON -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <div class="property-detail">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide property-crousel mb-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner property-inner-crousel">
+          <div class="carousel-item active">
+            <img src="./images/home1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home3.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home4.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home5.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home6.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home7.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home8.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home9.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        <div class="carousel-indicators mb-0 ms-0">
+          <img
+            src="./images/home1.jpg"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active h-100"
+            aria-current="true"
+            aria-label="Slide 1"
+            alt="..."
+          />
+
+          <img
+            src="./images/home2.jpg"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            class="h-100 m-0 p-0"
+            aria-current="true"
+            aria-label="Slide 2"
+            alt="..."
+          />
+
+          <img
+            src="./images/home3.jpg"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            class=" "
+            aria-current="true"
+            aria-label="Slide 3"
+            alt="..."
+          />
+
+          <img
+            src="./images/home4.jpg"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            class=" "
+            aria-current="true"
+            aria-label="Slide 4"
+            alt="..."
+          />
+          <img
+            src="./images/home5.jpg"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            class=" "
+            aria-current="true"
+            aria-label="Slide 5"
+            alt="..."
+          />
+          <img
+            src="./images/home6.jpg"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="5"
+            class=" "
+            aria-current="true"
+            aria-label="Slide 6"
+            alt="..."
+          />
+          <img
+            src="./images/home7.jpg"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="6"
+            class=" "
+            aria-current="true"
+            aria-label="Slide 7"
+            alt="..."
+          />
+          <img
+            src="./images/home8.jpg"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="7"
+            class=" "
+            aria-current="true"
+            aria-label="Slide 8"
+            alt="..."
+          />
+          <img
+            src="./images/home9.jpg"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="8"
+            class=" "
+            aria-current="true"
+            aria-label="Slide 9"
+            alt="..."
+          />
+        </div>
+      </div>
+
+      <div class="property-overview">
+        <div class="block-wrap">
+          <div
+            class="overview-title d-flex justify-content-between align-items-center mt-5"
+          >
+            <h2>Overview</h2>
+
+            <div><strong>Property ID:</strong> HZ48</div>
+          </div>
+          <!-- block-title-wrap -->
+
+          <div class="d-flex property-overview-data border-top mt-4">
+            <ul
+              class="list-unstyled flex-fill property-overview-list mt-4 mb-4"
+            >
+              <li class="property-overview-item"><strong>Apartment</strong></li>
+              <li class="hz-meta-label property-overview-type">
+                Property Type
+              </li>
+            </ul>
+            <ul class="list-unstyled flex-fill mt-4 mb-4">
+              <li class="property-overview-item">
+                <i class="fa-solid fa-bed fa-sm"></i>
+                <strong>3</strong>
+              </li>
+              <li class="hz-meta-label h-beds">Bedrooms</li>
+            </ul>
+            <ul class="list-unstyled flex-fill mt-4 mb-4">
+              <li class="property-overview-item">
+                <i class="fa-solid fa-shower fa-sm"></i>
+                <strong>2</strong>
+              </li>
+              <li class="hz-meta-label h-baths">Bathrooms</li>
+            </ul>
+            <ul class="list-unstyled flex-fill mt-4 mb-4">
+              <li class="property-overview-item">
+                <i class="fa-solid fa-car fa-sm"></i> <strong>1</strong>
+              </li>
+              <li class="hz-meta-label h-garage">Garage</li>
+            </ul>
+            <ul class="list-unstyled flex-fill mt-4 mb-4">
+              <li class="property-overview-item">
+                <i class="fa-solid fa-ruler fa-sm"></i> <strong>1500</strong>
+              </li>
+              <li class="hz-meta-label h-area">Sq Ft</li>
+            </ul>
+            <ul class="list-unstyled flex-fill mt-4 mb-4">
+              <li class="property-overview-item">
+                <i class="houzez-icon icon-calendar-3 mr-1"></i>
+                <strong>2016</strong>
+              </li>
+              <li class="hz-meta-label h-year-built">Year Built</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property Description -->
+
+      <div class="property-overview mt-5">
+        <div class="block-wrap">
+          <div class="overview-title mt-5">
+            <h2>Description</h2>
+          </div>
+          <div class="property-description-content border-top">
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+              consequat. Duis autem vel eum iriure dolor in hendrerit in
+              vulputate velit esse molestie consequat, vel illum dolore eu
+              feugiat nulla facilisis at vero eros et accumsan et iusto odio
+              dignissim qui blandit praesent luptatum zzril delenit augue duis
+              dolore te feugait nulla facilisi.
+            </p>
+            <p class="mb-4">
+              Nam liber tempor cum soluta nobis eleifend option congue nihil
+              imperdiet doming id quod mazim placerat facer possim assum. Typi
+              non habent claritatem insitam; est usus legentis in iis qui facit
+              eorum claritatem. Investigationes demonstraverunt lectores legere
+              me lius quod ii legunt saepius. Claritas est etiam processus
+              dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum
+              est notare quam littera gothica, quam nunc putamus parum claram,
+              anteposuerit litterarum formas humanitatis per seacula quarta
+              decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
+              parum clari, fiant sollemnes in futurum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property Address -->
+
+      <div class="property-overview mt-5">
+        <div class="block-wrap">
+          <div
+            class="overview-title d-flex justify-content-between align-items-center"
+          >
+            <h2>Address</h2>
+
+            <a class="btn btn-primary btn-slim" href="#">
+              Open on Google Maps</a
+            >
+          </div>
+          <div class="block-content-wrap">
+            <div class="list-2-cols list-unstyled border-top my-3 mx-3">
+              <div class="list-2 mt-4">
+                <li class="detail-address border-bottom">
+                  <strong>Address</strong> <span>10425 Tabor St</span>
+                </li>
+                <li class="detail-city border-bottom">
+                  <strong>City</strong> <span>Los Angeles</span>
+                </li>
+                <li class="detail-state border-bottom">
+                  <strong>State/county</strong> <span>California</span>
+                </li>
+              </div>
+              <div class="list-2 mt-4">
+                <li class="detail-zip border-bottom">
+                  <strong>Zip/Postal Code</strong> <span>90034</span>
+                </li>
+                <li class="detail-area border-bottom">
+                  <strong>Area</strong> <span>Brookside</span>
+                </li>
+                <li class="detail-country border-bottom">
+                  <strong>Country</strong> <span>United States</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Details -->
+
+      <div class="property-overview mt-5">
+        <div class="block-wrap">
+          <div
+            class="overview-title d-flex justify-content-between align-items-center mb-5"
+          >
+            <h2>Details</h2>
+            <span class="small-text grey"
+              ><i class="bi bi-calendar3"></i> Updated on March 7, 2016 at 8:21
+              pm</span
+            >
+          </div>
+          <div class="block-content-wrap border-top my-3 mx-3">
+            <div class="property-detail">
+              <div
+                class="property-details-list list-2-cols list-unstyled my-3 mx-3"
+              >
+                <div class="list-2 mt-4 mb-4">
+                  <li class="border-bottom">
+                    <strong>Property ID:</strong>
+                    <span>HZ48</span>
+                  </li>
+                  <li class="border-bottom">
+                    <strong>Price:</strong>
+                    <span> $2,200/mo</span>
+                  </li>
+                  <li class="border-bottom">
+                    <strong>Property Size:</strong>
+                    <span>1500 Sq Ft</span>
+                  </li>
+                  <li class="border-bottom">
+                    <strong>Bedrooms:</strong>
+                    <span>3</span>
+                  </li>
+                  <li class="border-bottom">
+                    <strong>Bathrooms:</strong>
+                    <span>2</span>
+                  </li>
+                </div>
+
+                <div class="list-2 mt-4">
+                  <li class="border-bottom">
+                    <strong>Garage:</strong>
+                    <span>1</span>
+                  </li>
+                  <li class="border-bottom">
+                    <strong>Garage Size:</strong>
+                    <span>200 SqFt</span>
+                  </li>
+                  <li class="border-bottom">
+                    <strong>Year Built:</strong>
+                    <span>2016</span>
+                  </li>
+                  <li class="prop_type border-bottom">
+                    <strong>Property Type:</strong>
+                    <span>Apartment</span>
+                  </li>
+                  <li class="prop_status border-bottom">
+                    <strong>Property Status:</strong>
+                    <span>For Rent</span>
+                  </li>
+                </div>
+              </div>
+            </div>
+
+            <div class="overview-title">
+              <h2 class="">Additional details</h2>
+            </div>
+            <div class="list-2-cols list-unstyled border-top my-3 mx-3">
+              <div class="list-2 mt-4">
+                <li class="border-bottom">
+                  <strong>Deposit:</strong> <span>20%</span>
+                </li>
+                <li class="border-bottom">
+                  <strong>Pool Size:</strong> <span>300 Sqft</span>
+                </li>
+                <li class="border-bottom">
+                  <strong>Last remodel year:</strong> <span>1987</span>
+                </li>
+              </div>
+              <div class="list-2 mt-4">
+                <li class="border-bottom">
+                  <strong>Amenities:</strong> <span>Clubhouse</span>
+                </li>
+                <li class="border-bottom">
+                  <strong>Additional Rooms::</strong> <span>Guest Bath</span>
+                </li>
+                <li class="border-bottom">
+                  <strong>Equipment:</strong> <span>Grill - Gas</span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+
+      <div class="property-overview mt-5">
+        <div class="block-wrap">
+          <div
+            class="overview-title d-flex justify-content-between align-items-center mb-"
+          >
+            <h2>Features</h2>
+          </div>
+
+          <div class="block-content-wrap border-top my-4 mx-4">
+            <div class="list-3-cols list-unstyled mt-4">
+              <div class="list-3">
+                <li>
+                  <i class="bi bi-check-circle"></i
+                  ><a href="#">Air Conditioning</a>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i><a href="#">Barbeque</a>
+                </li>
+                <li><i class="bi bi-check-circle"></i><a href="#">Dryer</a></li>
+                <li><i class="bi bi-check-circle"></i><a href="#">Gym</a></li>
+                <li>
+                  <i class="bi bi-check-circle"></i><a href="#">Laundry</a>
+                </li>
+              </div>
+              <div class="list-3">
+                <li><i class="bi bi-check-circle"></i><a href="#">Lawn</a></li>
+                <li>
+                  <i class="bi bi-check-circle"></i><a href="#">Microwave</a>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i
+                  ><a href="#">Outdoor Shower</a>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i><a href="#">Refrigerator</a>
+                </li>
+                <li><i class="bi bi-check-circle"></i><a href="#">Sauna</a></li>
+              </div>
+
+              <div class="list-3">
+                <li>
+                  <i class="bi bi-check-circle"></i
+                  ><a href="#">Swimming Pool</a>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i><a href="#">TV Cable</a>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle"></i><a href="#">Washer</a>
+                </li>
+                <li><i class="bi bi-check-circle"></i><a href="#">WiFi</a></li>
+                <li>
+                  <i class="bi bi-check-circle"></i
+                  ><a href="#">Window Coverings</a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mortgage Calculator -->
+
+      <div class="property-overview mt-5">
+        <div class="block-wrap">
+          <div class="overview-title">
+            <h2>Mortgage Calculator</h2>
+          </div>
+          <div class="block-content-wrap border-top my-4 mx-4 mt-5">
+            <div class="d-flex align-items-center mortgage-calculator-main">
+              <div class="mortgage-calculator-chart flex-fill">
+                <div class="mortgage-calculator-monthly-payment-wrap">
+                  <div
+                    id="m_monthly_val"
+                    class="mortgage-calculator-monthly-payment"
+                  ></div>
+                  <div class="mortgage-calculator-monthly-requency">
+                    Monthly
+                  </div>
+                </div>
+
+                <canvas
+                  id="mortgage-calculator-chart"
+                  width="200"
+                  height="200"
+                ></canvas>
+              </div>
+              <div class="mortgage-data flex-fill">
+                <ul class="list-unstyled">
+                  <li class="border-bottom p-2">
+                    <strong
+                      ><i class="bi bi-circle color-red mx-1 me-2"></i>Principal
+                      & Interest</strong
+                    >
+                    <span id="principal_interest_val">$ 150</span>
+                  </li>
+
+                  <li class="border-bottom p-2">
+                    <strong>
+                      <i class="bi bi-circle color-blue mx-1 me-2"></i>Property
+                      Tax</strong
+                    >
+                    <span id="property_tax_val">$ 150</span>
+                  </li>
+
+                  <li class="border-bottom p-2">
+                    <strong
+                      ><i class="bi bi-circle color-yellow mx-1 me-2"></i>Home
+                      Insurance</strong
+                    >
+                    <span id="home_insurance_val">$ 150</span>
+                  </li>
+
+                  <li class="border-bottom p-2">
+                    <strong
+                      ><i class="bi bi-circle color-green mx-1 me-2"></i
+                      >PMI</strong
+                    >
+                    <span id="pmi_val">$ 150</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row mortage-row">
+              <div class="col-md-4">
+                <div class="form-group p-2">
+                  <label class="mb-2">Total Amount</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">$</div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Total Amount"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group p-2">
+                  <label class="mb-2">Down Payment</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">$</div>
+                    </div>
+                    <input
+                      id="down_payment"
+                      type="text"
+                      class="form-control"
+                      placeholder="Down Payment"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group p-2">
+                  <label class="mb-2">Interest Rate</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">%</div>
+                    </div>
+                    <input
+                      id="interest_rate"
+                      type="text"
+                      class="form-control"
+                      placeholder="Interest Rate"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group p-2">
+                  <label class="mb-2">Loan Terms (Years)</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="bi bi-calendar3"></i>
+                      </div>
+                    </div>
+                    <input
+                      id="loan_term"
+                      type="text"
+                      class="form-control"
+                      placeholder="Loan Terms (Years)"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group p-2">
+                  <label class="mb-2">Property Tax</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">$</div>
+                    </div>
+                    <input
+                      id="property_tax"
+                      type="text"
+                      class="form-control"
+                      placeholder="Property Tax"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group p-2">
+                  <label class="mb-2">Home Insurance</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">$</div>
+                    </div>
+                    <input
+                      id="home_insurance"
+                      type="text"
+                      class="form-control"
+                      placeholder="Home Insurance"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group p-2">
+                  <label class="mb-2">PMI</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">$</div>
+                    </div>
+                    <input
+                      id="pmi"
+                      type="text"
+                      class="form-control"
+                      placeholder="PMI"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 p-3">
+                <button type="submit" class="btn btn-search btn-primary">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floor Plans -->
+
+      <div class="property-overview mt-5">
+        <div class="block-wrap">
+          <div
+            class="overview-title d-flex justify-content-between align-items-center border-bottom"
+          >
+            <h2 class="mb-4">Floor Plans</h2>
+          </div>
+
+          <div class="block-content-wrap">
+            <div class="accordion my-4 mx-5">
+              <div class="floor-wrap border-bottom">
+                <div class="d-flex align-items-center floor-plans">
+                  <div class="accordion-title flex-grow-1">First Floor</div>
+                  <ul class="floor-information list-unstyled list-inline mt-2">
+                    <li class="list-inline-item fp-size">
+                      Size:
+                      <strong> 1267 Sqft</strong>
+                    </li>
+
+                    <li class="list-inline-item fp-room">
+                      <i class="fa-solid fa-bed fa-sm"></i>
+                      <strong>670 Sqft</strong>
+                    </li>
+
+                    <li class="list-inline-item fp-bath">
+                      <i class="fa-solid fa-shower fa-sm"></i>
+                      <strong>530 Sqft</strong>
+                    </li>
+
+                    <li class="list-inline-item fp-price">
+                      Price:
+                      <strong>$1,650</strong>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="floor-plan-wrap border-bottom">
+                <div class="d-flex align-items-center floor-plans">
+                  <div class="accordion-title flex-grow-1 mb-2 mt-2">
+                    Second Floor
+                  </div>
+                  <ul class="floor-information list-unstyled list-inline mt-2">
+                    <li class="list-inline-item fp-size">
+                      Size:
+                      <strong> 1345 Sqft</strong>
+                    </li>
+
+                    <li class="list-inline-item fp-room">
+                      <i class="fa-solid fa-bed fa-sm"></i>
+                      <strong>543 Sqft</strong>
+                    </li>
+
+                    <li class="list-inline-item fp-bath">
+                      <i class="fa-solid fa-shower fa-sm"></i>
+                      <strong>238 Sqft</strong>
+                    </li>
+
+                    <li class="list-inline-item fp-price">
+                      Price:
+                      <strong>$1,600</strong>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

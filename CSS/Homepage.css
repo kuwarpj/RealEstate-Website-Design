@@ -1,0 +1,184 @@
+.main-nav-container {
+  font-family: "Roboto";
+
+  height: 100vh;
+  background-image: url("../images/home8.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.navbar-toggler:focus {
+  opacity: none;
+}
+
+.navbar-toggler:focus,
+input:focus,
+select:focus {
+  outline: none !important;
+  overflow: auto;
+  box-shadow: none !important;
+}
+
+.nav-upper-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px !important;
+  border-bottom: 1px solid #929191 !important;
+}
+
+.nav-upper-row a {
+  color: white;
+  border-color: #929191 !important;
+}
+
+.nav-upper-row a:hover {
+  color: #ff6600;
+}
+
+.nav-lower-row {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* CHANGE PADDING TO 7px , 8px when you have limited menu list */
+.main-menu-list li {
+  padding: 7px 4px;
+}
+
+.main-menu-list li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+
+  border-radius: 5px;
+}
+
+.main-menu-list a:hover {
+  color: #ff6600;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  margin-right: 1rem;
+}
+
+.main-nav-heading {
+  margin-top: 10rem;
+}
+
+.main-nav-heading h1 {
+  font-weight: 500;
+  color: white;
+}
+
+.main-nav-heading p {
+  width: 60%;
+  margin: auto;
+  color: white;
+}
+
+.main-search-box {
+  border-radius: 8px;
+  margin-top: 7rem;
+  width: 85%;
+  background-color: #fefffe;
+}
+
+.search-wrap {
+  margin: auto;
+}
+
+.search-list-wrap label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.search-list-wrap select,
+.search-list-wrap input {
+  font-size: 14px;
+  padding: 9px 12px;
+}
+
+.search-list-wrap button {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1030px) {
+  .main-search-box {
+    width: 90%;
+  }
+
+  .search-list-wrap label {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .search-list-wrap select,
+  .search-list-wrap input {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .main-search-box {
+    width: 90% !important;
+  }
+
+  .social-icons {
+    display: none !important;
+  }
+
+  .nav-lower-row {
+    background-color: #011a32;
+  }
+
+  .search-wrap {
+    width: 100% !important;
+  }
+  .search-list-wrap {
+    width: 20% !important;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .main-nav-heading {
+    margin-top: 10rem;
+  }
+
+  .main-nav-heading h1 {
+    font-size: 32px;
+  }
+
+  .main-nav-heading p {
+    font-size: 15px !important;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 773px) {
+  .search-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-list-wrap {
+    width: 100% !important;
+  }
+
+  .search-list-wrap select,
+  .search-list-wrap input {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 656px) {
+}
